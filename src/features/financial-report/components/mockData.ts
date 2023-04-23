@@ -1,4 +1,10 @@
-export const bankMockData = {
+import { BankData, CostGoodData, ExpenseData, IncomeData } from '../types';
+
+type MockData<T> = {
+  data: T[];
+};
+
+export const bankMockData: MockData<BankData> = {
   data: [
     {
       bankName: 'First Republic Saving',
@@ -53,7 +59,7 @@ export const bankMockData = {
   ],
 };
 
-export const incomeMockData = {
+export const incomeMockData: MockData<IncomeData> = {
   data: [
     {
       type: 'Provision of Services',
@@ -78,7 +84,7 @@ export const incomeMockData = {
           date: '02/2023',
           value: 2738,
         },
-      ]
+      ],
     },
     {
       type: 'Sales of Product Income',
@@ -103,12 +109,12 @@ export const incomeMockData = {
           date: '02/2023',
           value: 93846,
         },
-      ]
+      ],
     },
-  ]
+  ],
 };
 
-export const costGoodsMockData = {
+export const costGoodsMockData: MockData<CostGoodData> = {
   data: [
     {
       type: 'Wages and benefits',
@@ -133,7 +139,7 @@ export const costGoodsMockData = {
           date: '02/2023',
           value: 300,
         },
-      ]
+      ],
     },
     {
       type: 'Product Shipping',
@@ -158,12 +164,12 @@ export const costGoodsMockData = {
           date: '02/2023',
           value: 248,
         },
-      ]
+      ],
     },
-  ]
+  ],
 };
 
-export const expenseMockData = {
+export const expenseMockData: MockData<ExpenseData> = {
   data: [
     {
       type: 'Bank Charge & Fees',
@@ -191,80 +197,80 @@ export const expenseMockData = {
       ],
     },
     {
-        type: 'Legal Services',
-        values: [
-          {
-            date: '10/2022',
-            value: -600,
-          },
-          {
-            date: '11/2022',
-            value: -130,
-          },
-          {
-            date: '12/2022',
-            value: -200,
-          },
-          {
-            date: '01/2023',
-            value: -300,
-          },
-          {
-            date: '02/2023',
-            value: -330,
-          },
-        ],
-      },
-      {
-        type: 'Taxes & Licenses',
-        values: [
-          {
-            date: '10/2022',
-            value: -300,
-          },
-          {
-            date: '11/2022',
-            value: -420,
-          },
-          {
-            date: '12/2022',
-            value: -100,
-          },
-          {
-            date: '01/2023',
-            value: -120,
-          },
-          {
-            date: '02/2023',
-            value: -240,
-          },
-        ],
-      },
-      {
-        type: 'Office Supplies & Software',
-        values: [
-          {
-            date: '10/2022',
-            value: -200,
-          },
-          {
-            date: '11/2022',
-            value: -400,
-          },
-          {
-            date: '12/2022',
-            value: -100,
-          },
-          {
-            date: '01/2023',
-            value: -201,
-          },
-          {
-            date: '02/2023',
-            value: -380,
-          },
-        ],
-      },
+      type: 'Legal Services',
+      values: [
+        {
+          date: '10/2022',
+          value: -600,
+        },
+        {
+          date: '11/2022',
+          value: -130,
+        },
+        {
+          date: '12/2022',
+          value: -200,
+        },
+        {
+          date: '01/2023',
+          value: -300,
+        },
+        {
+          date: '02/2023',
+          value: -330,
+        },
+      ],
+    },
+    {
+      type: 'Taxes & Licenses',
+      values: [
+        {
+          date: '10/2022',
+          value: -300,
+        },
+        {
+          date: '11/2022',
+          value: -420,
+        },
+        {
+          date: '12/2022',
+          value: -100,
+        },
+        {
+          date: '01/2023',
+          value: -120,
+        },
+        {
+          date: '02/2023',
+          value: -240,
+        },
+      ],
+    },
+    {
+      type: 'Office Supplies & Software',
+      values: [
+        {
+          date: '10/2022',
+          value: -200,
+        },
+        {
+          date: '11/2022',
+          value: -400,
+        },
+        {
+          date: '12/2022',
+          value: -100,
+        },
+        {
+          date: '01/2023',
+          value: -201,
+        },
+        {
+          date: '02/2023',
+          value: -380,
+        },
+      ],
+    },
   ],
 };
 

@@ -1,16 +1,28 @@
 import { Table } from 'antd';
+import type { ColumnsType } from 'antd/es/table';
 import {
   bankMockData,
   costGoodsMockData,
   expenseMockData,
   incomeMockData,
 } from './mockData';
-import type { ColumnsType } from 'antd/es/table';
 import { getSumByMonth, mapChildrenValues } from './utils';
+import {
+  BankData,
+  CostGoodData,
+  ExpenseData,
+  IncomeData,
+  SumByMonth,
+} from '../types';
 
 import './styles.scss';
 
-const getDataSource = (banksData, expensesData, costGoodData, incomeData) => {
+const getDataSource = (
+  banksData: BankData[],
+  expensesData: ExpenseData[],
+  costGoodData: CostGoodData[],
+  incomeData: IncomeData[]
+) => {
   const bankChildren = mapChildrenValues(banksData, 'bankName', 'balance');
   const incomeChildren = mapChildrenValues(incomeData, 'type', 'values');
   const costGoodChildren = mapChildrenValues(costGoodData, 'type', 'values');
@@ -19,11 +31,11 @@ const getDataSource = (banksData, expensesData, costGoodData, incomeData) => {
   const incomeSum = getSumByMonth(incomeData, 'values');
   const costGoodSum = getSumByMonth(costGoodData, 'values');
   const expensesSum = getSumByMonth(expensesData, 'values');
-  const grossProfit = {};
+  const grossProfit: SumByMonth = {};
   Object.keys(incomeSum).forEach((month) => {
     grossProfit[month] = incomeSum[month] - costGoodSum[month];
   });
-  const netProfit = {};
+  const netProfit: SumByMonth = {};
   Object.keys(expensesSum).forEach((month) => {
     netProfit[month] = grossProfit[month] + expensesSum[month];
   });
@@ -73,7 +85,7 @@ const getDataSource = (banksData, expensesData, costGoodData, incomeData) => {
       key: '8',
       sectionName: 'Net Income',
       isCalculated: true,
-      ...netProfit
+      ...netProfit,
     },
   ];
 };
@@ -139,7 +151,7 @@ const getColumns = () => {
   return columns;
 };
 
-export default function FinancialReport() {
+export default function FinancialReport(): JSX.Element {
   return (
     <Table
       dataSource={getDataSource(

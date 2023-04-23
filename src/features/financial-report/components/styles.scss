@@ -8,7 +8,7 @@ $table-font-size: 12px;
   .main-table-header {
     font-size: 20px;
   }
-  
+
   .table-header {
     p {
       text-align: end;
@@ -16,20 +16,20 @@ $table-font-size: 12px;
       margin: 0;
       font-size: 10px;
     }
-  
+
     .date {
       color: black;
       font-weight: bold;
       font-size: $table-font-size;
     }
   }
-  
+
   .calculated-row td {
     background-color: rgb(241, 246, 249) !important;
     padding: 8px 8px !important;
     line-height: 1;
     font-weight: bold;
-  
+
     .ant-table-row-expand-icon {
       display: none;
     }
@@ -42,5 +42,5 @@ $table-font-size: 12px;
     &.ant-table-cell-fix-left {
       text-align: left;
     }
-  }  
+  }
 }
