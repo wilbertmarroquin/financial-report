@@ -1,8 +1,10 @@
+import FinancialReport from './features/financial-report/components/FinancialReport';
+
 import './App.css';
 
 function App() {
   return (
-    <div>Hello</div>
+    <FinancialReport />
   );
 }
 
