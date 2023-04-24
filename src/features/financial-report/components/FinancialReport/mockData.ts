@@ -1,4 +1,4 @@
-import { BankData, CostGoodData, ExpenseData, IncomeData } from '../types';
+import { BankData, CostGoodData, ExpenseData, IncomeData } from '../../types';
 
 type MockData<T> = {
   data: T[];
