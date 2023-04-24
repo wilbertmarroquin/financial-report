@@ -1,19 +1,24 @@
 import { Table } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
+import { useContext } from 'react';
 import {
   bankMockData,
   costGoodsMockData,
   expenseMockData,
   incomeMockData,
 } from './mockData';
-import { getSumByMonth, mapChildrenValues } from './utils';
+import { getSumByMonth, mapChildrenValues } from '../utils';
 import {
   BankData,
   CostGoodData,
   ExpenseData,
   IncomeData,
   SumByMonth,
-} from '../types';
+} from '../../types';
+import {
+  TransactionAction,
+  TransactionDispatchContext,
+} from '../../context/TransactionContext';
 
 import './styles.scss';
 
@@ -90,7 +95,9 @@ const getDataSource = (
   ];
 };
 
-const getColumns = () => {
+const getColumns = (
+  transactionSiderAction: React.Dispatch<TransactionAction>
+) => {
   const dates = [
     {
       title: 'Oct 2022',
@@ -136,6 +143,13 @@ const getColumns = () => {
           <p className="date">{title}</p>
         </div>
       ),
+      onCell: (record) => ({
+        onClick: () => {
+          if (!record.sectionName) {
+            transactionSiderAction({ type: 'setData', data: record });
+          }
+        },
+      }),
       dataIndex,
       render: (value) => {
         const formatter = new Intl.NumberFormat('en-US', {
@@ -152,15 +166,18 @@ const getColumns = () => {
 };
 
 export default function FinancialReport(): JSX.Element {
+  const dispatch = useContext(TransactionDispatchContext);
+
   return (
     <Table
+      bordered
       dataSource={getDataSource(
         bankMockData.data,
         expenseMockData.data,
         costGoodsMockData.data,
         incomeMockData.data
       )}
-      columns={getColumns()}
+      columns={getColumns(dispatch)}
       pagination={false}
       rowClassName={(record) => {
         return record.isCalculated ? 'calculated-row' : '';

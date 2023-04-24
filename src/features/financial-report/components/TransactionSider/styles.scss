@@ -1,0 +1,71 @@
+$general-x-padding: 20px;
+$general-y-padding: 12px;
+
+.transaction-sider.ant-layout-sider-collapsed {
+  min-width: 400px !important;
+  display: block !important;
+}
+
+.transaction-sider.ant-layout-sider {
+  display: none;
+  background: white;
+  border-left: 1px solid grey;
+
+  .header {
+    background-color: #394867;
+    color: white;
+    padding: $general-y-padding $general-x-padding;
+    flex-flow: column;
+  }
+
+  .title {
+    justify-content: space-between;
+  }
+
+  .close {
+    color: grey;
+    cursor: pointer;
+  }
+
+  .count {
+    justify-content: space-between;
+    color: #f9d949;
+
+    .transaction {
+      font-size: 12px;
+    }
+
+    .date {
+      color: #9ba4b5;
+      font-size: 12px;
+    }
+  }
+
+  .month-info {
+    background-color: #f1f6f9;
+    padding: $general-y-padding $general-x-padding;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+  }
+}
+
+.transaction-card {
+  justify-content: space-between;
+  align-items: center;
+  padding: $general-y-padding $general-x-padding;
+  border-bottom: 1px solid grey;
+
+  .date,
+  .description {
+    color: #9ba4b5;
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  .title,
+  .value {
+    font-weight: bold;
+    font-size: 12px;
+  }
+}

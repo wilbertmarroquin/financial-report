@@ -1,11 +1,9 @@
-import FinancialReport from './features/financial-report/components/FinancialReport';
+import FinancialReportView from './features/financial-report';
 
 import './App.css';
 
 function App() {
-  return (
-    <FinancialReport />
-  );
+  return <FinancialReportView />;
 }
 
 export default App;
