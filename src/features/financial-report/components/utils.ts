@@ -10,6 +10,7 @@ type MapChildren = {
  * Function to create the children structure to use in table whe use the dates as keys to simplify the map in table example:
  * {
  *   'customTitleKey': "Example",
+ *    key: 'Example',
  *   '10/2022': 19283,
  *   '11/2022': -21282
  * }
@@ -33,6 +34,7 @@ export const mapChildrenValues = (
 
     return {
       [titleKey]: data[titleKey],
+      key: data[titleKey],
       ...dataPerMonth,
     };
   });
