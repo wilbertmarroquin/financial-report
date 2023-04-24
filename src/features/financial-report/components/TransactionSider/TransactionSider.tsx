@@ -40,18 +40,21 @@ export default function TransactionSider() {
         <Col>12397</Col>
       </Row>
       <TransactionCard
+        id={1}
         date="10/10/2002"
         description="Google Ads"
         title="Google"
         value={11234}
       />
       <TransactionCard
+        id={2}
         date="10/10/2002"
         description="Google Ads"
         title="Google"
         value={11234}
       />
       <TransactionCard
+        id={3}
         date="10/10/2002"
         description="Google Ads"
         title="Google"

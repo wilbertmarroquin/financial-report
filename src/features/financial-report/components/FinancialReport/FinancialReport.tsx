@@ -19,6 +19,7 @@ import {
   TransactionAction,
   TransactionDispatchContext,
 } from '../../context/TransactionContext';
+import FinancialCategoryRow from '../FinancialCategoryRow/FinancialCategoryRow';
 
 import './styles.scss';
 
@@ -125,7 +126,7 @@ const getColumns = (
     {
       title: <span className="main-table-header">Financial Report</span>,
       dataIndex: 'sectionName',
-      key: 'sectionName',
+      key: 'key',
       fixed: true,
       render: (sectionName, rowData) => {
         return sectionName || rowData.bankName || rowData.type;
@@ -143,13 +144,18 @@ const getColumns = (
           <p className="date">{title}</p>
         </div>
       ),
-      onCell: (record) => ({
-        onClick: () => {
-          if (!record.sectionName) {
-            transactionSiderAction({ type: 'setData', data: record });
-          }
-        },
-      }),
+      onCell: (record) => {
+        const { isCalculated, children } = record;
+        return {
+          id: `${record.key}-${dataIndex}`,
+          draggable: true,
+          onClick: () => {
+            if (!children && !isCalculated) {
+              transactionSiderAction({ type: 'setData', data: record });
+            }
+          },
+        };
+      },
       dataIndex,
       render: (value) => {
         const formatter = new Intl.NumberFormat('en-US', {
@@ -170,6 +176,18 @@ export default function FinancialReport(): JSX.Element {
 
   return (
     <Table
+      components={{
+        body: {
+          row: FinancialCategoryRow,
+        },
+      }}
+      onRow={(record) => {
+        const { isCalculated, children } = record;
+
+        return {
+          draggable: !children && !isCalculated,
+        };
+      }}
       bordered
       dataSource={getDataSource(
         bankMockData.data,
