@@ -1,0 +1,23 @@
+{
+  "/api/v1/*": "/$1",
+  "/bank/balance": "/bank",
+  "/income/balance": "/income",
+  "/cost/balance": "/costGood",
+  "/expense/balance": "/expense",
+  "/bank/transaction": "/bankTransaction",
+  "/bank/transaction?date=:date": "/bankTransaction?date=:date",
+  "/bank/transaction?bankId=:bankId": "/bankTransaction?bankId=:bankId",
+  "/bank/transaction?date=:date&bankId=:bankId": "/bankTransaction?date=:date&bankId=:bankId",
+  "/income/transaction": "/incomeTransaction",
+  "/income/transaction?date=:date": "/incomeTransaction?date=:date",
+  "/income/transaction?typeId=:typeId": "/incomeTransaction?typeId=:typeId",
+  "/income/transaction?date=:date&typeId=:typeId": "/incomeTransaction?date=:date&typeId=:typeId",
+  "/cost/transaction": "/costGoodTransaction",
+  "/cost/transaction?date=:date": "/costGoodTransaction?date=:date",
+  "/cost/transaction?typeId=:typeId": "/costGoodTransaction?typeId=:typeId",
+  "/cost/transaction?date=:date&typeId=:typeId": "/costGoodTransaction?date=:date&typeId=:typeId",
+  "/expense/transaction": "/expenseTransaction",
+  "/expense/transaction?date=:date": "/expenseTransaction?date=:date",
+  "/expense/transaction?typeId=:typeId": "/expenseTransaction?typeId=:typeId",
+  "/expense/transaction?date=:date&typeId=:typeId": "/expenseTransaction?date=:date&typeId=:typeId"
+}

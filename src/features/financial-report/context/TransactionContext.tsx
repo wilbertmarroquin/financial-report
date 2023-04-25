@@ -37,6 +37,10 @@ const stateActions = {
     ...state,
     collapse: action.collapse,
   }),
+  forceUpdateDataObject: (state: TransactionState): TransactionState => ({
+    collapse: state.collapse,
+    currentCellData: { ...state.currentCellData },
+  }),
 };
 
 const stateReducer = (state: TransactionState, action: TransactionAction) => {

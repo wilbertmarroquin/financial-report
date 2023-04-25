@@ -1,4 +1,12 @@
-.on-drop,
-.on-drop .ant-table-cell-fix-left {
-  background: rgba(50,205,50, 0.3) !important;
+.on-drop {
+  &.allowed,
+  &.allowed .ant-table-cell-fix-left {
+    background: rgba(50,205,50, 0.3) !important;
+    transition: none;
+  }
+  &.restrict,
+  &.restrict .ant-table-cell-fix-left {
+    background: rgba(178,34,34, 0.3) !important;
+    transition: none;
+  }
 }

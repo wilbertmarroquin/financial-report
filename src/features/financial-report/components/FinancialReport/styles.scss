@@ -44,7 +44,8 @@ $table-font-size: 12px;
     }
   }
 
-  .ant-table-row-level-1 .ant-table-cell:not(:first-of-type):hover {
+  .ant-table-row-level-1 .ant-table-cell:not(:first-of-type):hover,
+  .ant-table-row-level-1 .ant-table-cell:not(:first-of-type):focus {
     border: 1px solid yellow !important;
     transition: background 0.2s;
     cursor: pointer;

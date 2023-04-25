@@ -25,3 +25,5 @@ export type CostGoodData = CommonData;
 export type ExpenseData = CostGoodData;
 
 export type IncomeData = CostGoodData;
+
+export type FinancialType = 'bank' | 'income' | 'expense' | 'cost';

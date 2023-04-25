@@ -1,0 +1,1528 @@
+{
+  "bank": [
+    {
+      "id": 1,
+      "bankName": "First Republic Saving",
+      "balance": [
+        {
+          "id": 1,
+          "date": "10/2022",
+          "value": 13236
+        },
+        {
+          "id": 2,
+          "date": "11/2022",
+          "value": 15272
+        },
+        {
+          "id": 3,
+          "date": "12/2022",
+          "value": 10631
+        },
+        {
+          "id": 4,
+          "date": "01/2023",
+          "value": 17687
+        },
+        {
+          "id": 5,
+          "date": "02/2023",
+          "value": 13491
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "bankName": "Chase Checking",
+      "balance": [
+        {
+          "id": 1,
+          "date": "10/2022",
+          "value": 13133
+        },
+        {
+          "id": 2,
+          "date": "11/2022",
+          "value": 14760
+        },
+        {
+          "id": 3,
+          "date": "12/2022",
+          "value": 15535
+        },
+        {
+          "id": 4,
+          "date": "01/2023",
+          "value": 27306
+        },
+        {
+          "id": 5,
+          "date": "02/2023",
+          "value": 15471
+        }
+      ]
+    }
+  ],
+  "income": [
+    {
+      "id": 1,
+      "type": "Provision of Services",
+      "values": [
+        {
+          "id": 1,
+          "date": "10/2022",
+          "value": 11142
+        },
+        {
+          "id": 2,
+          "date": "11/2022",
+          "value": 24277
+        },
+        {
+          "id": 3,
+          "date": "12/2022",
+          "value": 13657
+        },
+        {
+          "id": 4,
+          "date": "01/2023",
+          "value": 12517
+        },
+        {
+          "id": 5,
+          "date": "02/2023",
+          "value": 21936
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "Sales of Product Income",
+      "values": [
+        {
+          "id": 1,
+          "date": "10/2022",
+          "value": 10387
+        },
+        {
+          "id": 2,
+          "date": "11/2022",
+          "value": 21203
+        },
+        {
+          "id": 3,
+          "date": "12/2022",
+          "value": 14159
+        },
+        {
+          "id": 4,
+          "date": "01/2023",
+          "value": 20377
+        },
+        {
+          "id": 5,
+          "date": "02/2023",
+          "value": 19190
+        }
+      ]
+    }
+  ],
+  "costGood": [
+    {
+      "id": 1,
+      "type": "Wages and benefits",
+      "values": [
+        {
+          "id": 1,
+          "date": "10/2022",
+          "value": -1717
+        },
+        {
+          "id": 2,
+          "date": "11/2022",
+          "value": -1222
+        },
+        {
+          "id": 3,
+          "date": "12/2022",
+          "value": -1355
+        },
+        {
+          "id": 4,
+          "date": "01/2023",
+          "value": -1850
+        },
+        {
+          "id": 5,
+          "date": "02/2023",
+          "value": -1329
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "Product Shipping",
+      "values": [
+        {
+          "id": 1,
+          "date": "10/2022",
+          "value": -1535
+        },
+        {
+          "id": 2,
+          "date": "11/2022",
+          "value": -1700
+        },
+        {
+          "id": 3,
+          "date": "12/2022",
+          "value": -1922
+        },
+        {
+          "id": 4,
+          "date": "01/2023",
+          "value": -1747
+        },
+        {
+          "id": 5,
+          "date": "02/2023",
+          "value": -1698
+        }
+      ]
+    }
+  ],
+  "expense": [
+    {
+      "id": 1,
+      "type": "Bank Charge & Fees",
+      "values": [
+        {
+          "id": 1,
+          "date": "10/2022",
+          "value": -2182
+        },
+        {
+          "id": 2,
+          "date": "11/2022",
+          "value": -4547
+        },
+        {
+          "id": 3,
+          "date": "12/2022",
+          "value": -2199
+        },
+        {
+          "id": 4,
+          "date": "01/2023",
+          "value": -4329
+        },
+        {
+          "id": 5,
+          "date": "02/2023",
+          "value": -4143
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "Legal Services",
+      "values": [
+        {
+          "id": 1,
+          "date": "10/2022",
+          "value": -3808
+        },
+        {
+          "id": 2,
+          "date": "11/2022",
+          "value": -4891
+        },
+        {
+          "id": 3,
+          "date": "12/2022",
+          "value": -3233
+        },
+        {
+          "id": 4,
+          "date": "01/2023",
+          "value": -3477
+        },
+        {
+          "id": 5,
+          "date": "02/2023",
+          "value": -3945
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Taxes & Licenses",
+      "values": [
+        {
+          "id": 1,
+          "date": "10/2022",
+          "value": -6040
+        },
+        {
+          "id": 2,
+          "date": "11/2022",
+          "value": -3554
+        },
+        {
+          "id": 3,
+          "date": "12/2022",
+          "value": -5714
+        },
+        {
+          "id": 4,
+          "date": "01/2023",
+          "value": -3072
+        },
+        {
+          "id": 5,
+          "date": "02/2023",
+          "value": -4528
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "Office Supplies & Software",
+      "values": [
+        {
+          "id": 1,
+          "date": "10/2022",
+          "value": -4363
+        },
+        {
+          "id": 2,
+          "date": "11/2022",
+          "value": -6614
+        },
+        {
+          "id": 3,
+          "date": "12/2022",
+          "value": -4037
+        },
+        {
+          "id": 4,
+          "date": "01/2023",
+          "value": -7759
+        },
+        {
+          "id": 5,
+          "date": "02/2023",
+          "value": -5129
+        }
+      ]
+    }
+  ],
+  "expenseTransaction": [
+    {
+      "id": 1,
+      "date": "10/2022",
+      "value": -161,
+      "title": "commodo",
+      "description": "amet eu",
+      "typeId": 2
+    },
+    {
+      "id": 2,
+      "typeId": 1,
+      "date": "10/2022",
+      "value": -252,
+      "title": "velit",
+      "description": "voluptate velit"
+    },
+    {
+      "id": 3,
+      "typeId": 1,
+      "date": "10/2022",
+      "value": -1930,
+      "title": "veniam",
+      "description": "sint et"
+    },
+    {
+      "id": 4,
+      "typeId": 1,
+      "date": "11/2022",
+      "value": -1911,
+      "title": "irure",
+      "description": "esse ad"
+    },
+    {
+      "id": 5,
+      "typeId": 1,
+      "date": "11/2022",
+      "value": -268,
+      "title": "irure",
+      "description": "proident ad"
+    },
+    {
+      "id": 6,
+      "typeId": 1,
+      "date": "11/2022",
+      "value": -2368,
+      "title": "in",
+      "description": "aliquip quis"
+    },
+    {
+      "id": 7,
+      "typeId": 1,
+      "date": "12/2022",
+      "value": -525,
+      "title": "sint",
+      "description": "tempor id"
+    },
+    {
+      "id": 8,
+      "typeId": 1,
+      "date": "12/2022",
+      "value": -633,
+      "title": "exercitation",
+      "description": "aliqua pariatur"
+    },
+    {
+      "id": 9,
+      "typeId": 1,
+      "date": "12/2022",
+      "value": -1041,
+      "title": "laboris",
+      "description": "aute enim"
+    },
+    {
+      "id": 10,
+      "typeId": 1,
+      "date": "01/2023",
+      "value": -2367,
+      "title": "sit",
+      "description": "consectetur et"
+    },
+    {
+      "id": 11,
+      "typeId": 1,
+      "date": "01/2023",
+      "value": -1090,
+      "title": "labore",
+      "description": "duis commodo"
+    },
+    {
+      "id": 12,
+      "typeId": 1,
+      "date": "01/2023",
+      "value": -872,
+      "title": "nostrud",
+      "description": "veniam esse"
+    },
+    {
+      "id": 13,
+      "typeId": 1,
+      "date": "02/2023",
+      "value": -296,
+      "title": "veniam",
+      "description": "proident excepteur"
+    },
+    {
+      "id": 14,
+      "typeId": 1,
+      "date": "02/2023",
+      "value": -2994,
+      "title": "et",
+      "description": "culpa ad"
+    },
+    {
+      "id": 15,
+      "typeId": 1,
+      "date": "02/2023",
+      "value": -853,
+      "title": "nulla",
+      "description": "ut aliquip"
+    },
+    {
+      "id": 16,
+      "typeId": 2,
+      "date": "10/2022",
+      "value": -2405,
+      "title": "voluptate",
+      "description": "commodo id"
+    },
+    {
+      "id": 17,
+      "typeId": 2,
+      "date": "10/2022",
+      "value": -574,
+      "title": "duis",
+      "description": "dolor commodo"
+    },
+    {
+      "id": 18,
+      "typeId": 2,
+      "date": "10/2022",
+      "value": -668,
+      "title": "nisi",
+      "description": "do fugiat"
+    },
+    {
+      "id": 19,
+      "typeId": 2,
+      "date": "11/2022",
+      "value": -281,
+      "title": "excepteur",
+      "description": "nulla ea"
+    },
+    {
+      "id": 20,
+      "typeId": 2,
+      "date": "11/2022",
+      "value": -2106,
+      "title": "est",
+      "description": "voluptate ad"
+    },
+    {
+      "id": 21,
+      "typeId": 2,
+      "date": "11/2022",
+      "value": -2504,
+      "title": "mollit",
+      "description": "reprehenderit cupidatat"
+    },
+    {
+      "id": 22,
+      "typeId": 2,
+      "date": "12/2022",
+      "value": -2275,
+      "title": "do",
+      "description": "occaecat elit"
+    },
+    {
+      "id": 23,
+      "typeId": 2,
+      "date": "12/2022",
+      "value": -731,
+      "title": "cillum",
+      "description": "adipisicing occaecat"
+    },
+    {
+      "id": 24,
+      "typeId": 2,
+      "date": "12/2022",
+      "value": -227,
+      "title": "fugiat",
+      "description": "dolore non"
+    },
+    {
+      "id": 25,
+      "typeId": 2,
+      "date": "01/2023",
+      "value": -1279,
+      "title": "ad",
+      "description": "et labore"
+    },
+    {
+      "id": 26,
+      "typeId": 2,
+      "date": "01/2023",
+      "value": -1525,
+      "title": "sunt",
+      "description": "consectetur est"
+    },
+    {
+      "id": 27,
+      "typeId": 2,
+      "date": "01/2023",
+      "value": -673,
+      "title": "tempor",
+      "description": "qui minim"
+    },
+    {
+      "id": 28,
+      "typeId": 2,
+      "date": "02/2023",
+      "value": -1168,
+      "title": "aute",
+      "description": "Lorem magna"
+    },
+    {
+      "id": 29,
+      "typeId": 2,
+      "date": "02/2023",
+      "value": -1351,
+      "title": "id",
+      "description": "quis consectetur"
+    },
+    {
+      "id": 30,
+      "typeId": 2,
+      "date": "02/2023",
+      "value": -1426,
+      "title": "voluptate",
+      "description": "irure proident"
+    },
+    {
+      "id": 31,
+      "typeId": 3,
+      "date": "10/2022",
+      "value": -640,
+      "title": "aliqua",
+      "description": "sunt dolor"
+    },
+    {
+      "id": 32,
+      "typeId": 3,
+      "date": "10/2022",
+      "value": -2848,
+      "title": "enim",
+      "description": "sit duis"
+    },
+    {
+      "id": 33,
+      "typeId": 3,
+      "date": "10/2022",
+      "value": -2552,
+      "title": "aute",
+      "description": "sunt sunt"
+    },
+    {
+      "id": 34,
+      "typeId": 3,
+      "date": "11/2022",
+      "value": -2979,
+      "title": "sint",
+      "description": "ad eiusmod"
+    },
+    {
+      "id": 35,
+      "typeId": 3,
+      "date": "11/2022",
+      "value": -355,
+      "title": "dolore",
+      "description": "et occaecat"
+    },
+    {
+      "id": 36,
+      "typeId": 3,
+      "date": "11/2022",
+      "value": -220,
+      "title": "pariatur",
+      "description": "velit sunt"
+    },
+    {
+      "id": 37,
+      "typeId": 3,
+      "date": "12/2022",
+      "value": -1687,
+      "title": "nostrud",
+      "description": "pariatur proident"
+    },
+    {
+      "id": 38,
+      "typeId": 3,
+      "date": "12/2022",
+      "value": -1352,
+      "title": "dolore",
+      "description": "magna qui"
+    },
+    {
+      "id": 39,
+      "typeId": 3,
+      "date": "12/2022",
+      "value": -2675,
+      "title": "veniam",
+      "description": "dolor minim"
+    },
+    {
+      "id": 40,
+      "typeId": 3,
+      "date": "01/2023",
+      "value": -2101,
+      "title": "qui",
+      "description": "duis proident"
+    },
+    {
+      "id": 41,
+      "typeId": 3,
+      "date": "01/2023",
+      "value": -334,
+      "title": "adipisicing",
+      "description": "sint pariatur"
+    },
+    {
+      "id": 42,
+      "typeId": 3,
+      "date": "01/2023",
+      "value": -637,
+      "title": "esse",
+      "description": "minim quis"
+    },
+    {
+      "id": 43,
+      "typeId": 3,
+      "date": "02/2023",
+      "value": -1557,
+      "title": "aliqua",
+      "description": "proident laborum"
+    },
+    {
+      "id": 44,
+      "typeId": 3,
+      "date": "02/2023",
+      "value": -984,
+      "title": "eiusmod",
+      "description": "ipsum esse"
+    },
+    {
+      "id": 45,
+      "typeId": 3,
+      "date": "02/2023",
+      "value": -1987,
+      "title": "consectetur",
+      "description": "officia labore"
+    },
+    {
+      "id": 46,
+      "typeId": 4,
+      "date": "10/2022",
+      "value": -1314,
+      "title": "minim",
+      "description": "incididunt voluptate"
+    },
+    {
+      "id": 47,
+      "typeId": 4,
+      "date": "10/2022",
+      "value": -2020,
+      "title": "consequat",
+      "description": "est duis"
+    },
+    {
+      "id": 48,
+      "typeId": 4,
+      "date": "10/2022",
+      "value": -1029,
+      "title": "do",
+      "description": "velit cillum"
+    },
+    {
+      "id": 49,
+      "typeId": 4,
+      "date": "11/2022",
+      "value": -1673,
+      "title": "excepteur",
+      "description": "ea officia"
+    },
+    {
+      "id": 50,
+      "typeId": 4,
+      "date": "11/2022",
+      "value": -2471,
+      "title": "non",
+      "description": "voluptate proident"
+    },
+    {
+      "id": 51,
+      "typeId": 4,
+      "date": "11/2022",
+      "value": -2470,
+      "title": "quis",
+      "description": "culpa elit"
+    },
+    {
+      "id": 52,
+      "typeId": 4,
+      "date": "12/2022",
+      "value": -652,
+      "title": "dolore",
+      "description": "eiusmod consequat"
+    },
+    {
+      "id": 53,
+      "typeId": 4,
+      "date": "12/2022",
+      "value": -2807,
+      "title": "tempor",
+      "description": "enim commodo"
+    },
+    {
+      "id": 54,
+      "typeId": 4,
+      "date": "12/2022",
+      "value": -578,
+      "title": "fugiat",
+      "description": "nulla ullamco"
+    },
+    {
+      "id": 55,
+      "typeId": 4,
+      "date": "01/2023",
+      "value": -2809,
+      "title": "quis",
+      "description": "ad sunt"
+    },
+    {
+      "id": 56,
+      "typeId": 4,
+      "date": "01/2023",
+      "value": -2206,
+      "title": "quis",
+      "description": "do consectetur"
+    },
+    {
+      "id": 57,
+      "typeId": 4,
+      "date": "01/2023",
+      "value": -2744,
+      "title": "ut",
+      "description": "adipisicing ex"
+    },
+    {
+      "id": 58,
+      "typeId": 4,
+      "date": "02/2023",
+      "value": -1733,
+      "title": "eu",
+      "description": "sunt mollit"
+    },
+    {
+      "id": 59,
+      "typeId": 4,
+      "date": "02/2023",
+      "value": -2583,
+      "title": "fugiat",
+      "description": "qui id"
+    },
+    {
+      "id": 60,
+      "typeId": 4,
+      "date": "02/2023",
+      "value": -813,
+      "title": "occaecat",
+      "description": "occaecat ullamco"
+    }
+  ],
+  "costGoodTransaction": [
+    {
+      "id": 1,
+      "typeId": 1,
+      "date": "10/2022",
+      "value": -322,
+      "title": "voluptate",
+      "description": "sit dolore"
+    },
+    {
+      "id": 2,
+      "typeId": 1,
+      "date": "10/2022",
+      "value": -997,
+      "title": "aute",
+      "description": "nostrud proident"
+    },
+    {
+      "id": 3,
+      "typeId": 1,
+      "date": "10/2022",
+      "value": -398,
+      "title": "Lorem",
+      "description": "laborum adipisicing"
+    },
+    {
+      "id": 4,
+      "typeId": 1,
+      "date": "11/2022",
+      "value": -287,
+      "title": "exercitation",
+      "description": "eu minim"
+    },
+    {
+      "id": 5,
+      "typeId": 1,
+      "date": "11/2022",
+      "value": -779,
+      "title": "commodo",
+      "description": "id ipsum"
+    },
+    {
+      "id": 6,
+      "typeId": 1,
+      "date": "11/2022",
+      "value": -156,
+      "title": "amet",
+      "description": "incididunt minim"
+    },
+    {
+      "id": 7,
+      "typeId": 1,
+      "date": "12/2022",
+      "value": -611,
+      "title": "nisi",
+      "description": "cupidatat in"
+    },
+    {
+      "id": 8,
+      "typeId": 1,
+      "date": "12/2022",
+      "value": -573,
+      "title": "adipisicing",
+      "description": "ad esse"
+    },
+    {
+      "id": 9,
+      "typeId": 1,
+      "date": "12/2022",
+      "value": -171,
+      "title": "deserunt",
+      "description": "irure nulla"
+    },
+    {
+      "id": 10,
+      "typeId": 1,
+      "date": "01/2023",
+      "value": -723,
+      "title": "voluptate",
+      "description": "Lorem minim"
+    },
+    {
+      "id": 11,
+      "typeId": 1,
+      "date": "01/2023",
+      "value": -535,
+      "title": "id",
+      "description": "excepteur enim"
+    },
+    {
+      "id": 12,
+      "typeId": 1,
+      "date": "01/2023",
+      "value": -592,
+      "title": "eu",
+      "description": "officia consequat"
+    },
+    {
+      "id": 13,
+      "typeId": 1,
+      "date": "02/2023",
+      "value": -643,
+      "title": "mollit",
+      "description": "nulla velit"
+    },
+    {
+      "id": 14,
+      "typeId": 1,
+      "date": "02/2023",
+      "value": -165,
+      "title": "ut",
+      "description": "deserunt id"
+    },
+    {
+      "id": 15,
+      "typeId": 1,
+      "date": "02/2023",
+      "value": -521,
+      "title": "cillum",
+      "description": "nulla elit"
+    },
+    {
+      "id": 16,
+      "typeId": 2,
+      "date": "10/2022",
+      "value": -827,
+      "title": "adipisicing",
+      "description": "irure cupidatat"
+    },
+    {
+      "id": 17,
+      "typeId": 2,
+      "date": "10/2022",
+      "value": -171,
+      "title": "ut",
+      "description": "aute excepteur"
+    },
+    {
+      "id": 18,
+      "typeId": 2,
+      "date": "10/2022",
+      "value": -537,
+      "title": "fugiat",
+      "description": "dolore eu"
+    },
+    {
+      "id": 19,
+      "typeId": 2,
+      "date": "11/2022",
+      "value": -810,
+      "title": "eu",
+      "description": "excepteur mollit"
+    },
+    {
+      "id": 20,
+      "typeId": 2,
+      "date": "11/2022",
+      "value": -755,
+      "title": "fugiat",
+      "description": "cillum et"
+    },
+    {
+      "id": 21,
+      "typeId": 2,
+      "date": "11/2022",
+      "value": -135,
+      "title": "reprehenderit",
+      "description": "qui ad"
+    },
+    {
+      "id": 22,
+      "typeId": 2,
+      "date": "12/2022",
+      "value": -704,
+      "title": "id",
+      "description": "id enim"
+    },
+    {
+      "id": 23,
+      "typeId": 2,
+      "date": "12/2022",
+      "value": -319,
+      "title": "aute",
+      "description": "proident ut"
+    },
+    {
+      "id": 24,
+      "typeId": 2,
+      "date": "12/2022",
+      "value": -899,
+      "title": "voluptate",
+      "description": "sint nulla"
+    },
+    {
+      "id": 25,
+      "typeId": 2,
+      "date": "01/2023",
+      "value": -559,
+      "title": "nisi",
+      "description": "laboris labore"
+    },
+    {
+      "id": 26,
+      "typeId": 2,
+      "date": "01/2023",
+      "value": -436,
+      "title": "exercitation",
+      "description": "dolore deserunt"
+    },
+    {
+      "id": 27,
+      "typeId": 2,
+      "date": "01/2023",
+      "value": -752,
+      "title": "ea",
+      "description": "Lorem ea"
+    },
+    {
+      "id": 28,
+      "typeId": 2,
+      "date": "02/2023",
+      "value": -268,
+      "title": "esse",
+      "description": "culpa ex"
+    },
+    {
+      "id": 29,
+      "typeId": 2,
+      "date": "02/2023",
+      "value": -469,
+      "title": "nulla",
+      "description": "ea sint"
+    },
+    {
+      "id": 30,
+      "typeId": 2,
+      "date": "02/2023",
+      "value": -961,
+      "title": "ex",
+      "description": "veniam ex"
+    }
+  ],
+  "incomeTransaction": [
+    {
+      "id": 1,
+      "typeId": 1,
+      "date": "10/2022",
+      "value": 3732,
+      "title": "ad",
+      "description": "occaecat do"
+    },
+    {
+      "id": 2,
+      "typeId": 1,
+      "date": "10/2022",
+      "value": 4841,
+      "title": "elit",
+      "description": "ipsum voluptate"
+    },
+    {
+      "id": 3,
+      "typeId": 1,
+      "date": "10/2022",
+      "value": 2569,
+      "title": "aute",
+      "description": "occaecat minim"
+    },
+    {
+      "id": 4,
+      "date": "11/2022",
+      "value": 9500,
+      "title": "officia",
+      "description": "nostrud proident",
+      "typeId": 1
+    },
+    {
+      "id": 5,
+      "typeId": 1,
+      "date": "11/2022",
+      "value": 5683,
+      "title": "sint",
+      "description": "ad reprehenderit"
+    },
+    {
+      "id": 6,
+      "typeId": 1,
+      "date": "11/2022",
+      "value": 9094,
+      "title": "laborum",
+      "description": "ad exercitation"
+    },
+    {
+      "id": 7,
+      "typeId": 1,
+      "date": "12/2022",
+      "value": 9021,
+      "title": "quis",
+      "description": "sunt dolor"
+    },
+    {
+      "id": 8,
+      "typeId": 1,
+      "date": "12/2022",
+      "value": 4636,
+      "title": "ea",
+      "description": "aliquip officia"
+    },
+    {
+      "id": 9,
+      "date": "12/2022",
+      "value": 1270,
+      "title": "consequat",
+      "description": "incididunt sit",
+      "typeId": 2
+    },
+    {
+      "id": 10,
+      "typeId": 1,
+      "date": "01/2023",
+      "value": 5150,
+      "title": "Lorem",
+      "description": "exercitation minim"
+    },
+    {
+      "id": 11,
+      "typeId": 1,
+      "date": "01/2023",
+      "value": 3880,
+      "title": "ut",
+      "description": "minim ad"
+    },
+    {
+      "id": 12,
+      "typeId": 1,
+      "date": "01/2023",
+      "value": 3487,
+      "title": "commodo",
+      "description": "laboris ad"
+    },
+    {
+      "id": 13,
+      "typeId": 1,
+      "date": "02/2023",
+      "value": 5046,
+      "title": "sint",
+      "description": "non aliquip"
+    },
+    {
+      "id": 14,
+      "typeId": 1,
+      "date": "02/2023",
+      "value": 8177,
+      "title": "adipisicing",
+      "description": "dolor esse"
+    },
+    {
+      "id": 15,
+      "typeId": 1,
+      "date": "02/2023",
+      "value": 8713,
+      "title": "Lorem",
+      "description": "consectetur magna"
+    },
+    {
+      "id": 16,
+      "typeId": 2,
+      "date": "10/2022",
+      "value": 1083,
+      "title": "cillum",
+      "description": "qui eiusmod"
+    },
+    {
+      "id": 17,
+      "typeId": 2,
+      "date": "10/2022",
+      "value": 2149,
+      "title": "eiusmod",
+      "description": "nulla eiusmod"
+    },
+    {
+      "id": 18,
+      "typeId": 2,
+      "date": "10/2022",
+      "value": 7155,
+      "title": "excepteur",
+      "description": "nostrud consectetur"
+    },
+    {
+      "id": 19,
+      "typeId": 2,
+      "date": "11/2022",
+      "value": 7841,
+      "title": "Lorem",
+      "description": "cillum excepteur"
+    },
+    {
+      "id": 20,
+      "typeId": 2,
+      "date": "11/2022",
+      "value": 5830,
+      "title": "dolore",
+      "description": "eiusmod consequat"
+    },
+    {
+      "id": 21,
+      "typeId": 2,
+      "date": "11/2022",
+      "value": 7532,
+      "title": "labore",
+      "description": "duis ea"
+    },
+    {
+      "id": 22,
+      "typeId": 2,
+      "date": "12/2022",
+      "value": 8792,
+      "title": "do",
+      "description": "consequat laboris"
+    },
+    {
+      "id": 23,
+      "typeId": 2,
+      "date": "12/2022",
+      "value": 2238,
+      "title": "voluptate",
+      "description": "officia fugiat"
+    },
+    {
+      "id": 24,
+      "typeId": 2,
+      "date": "12/2022",
+      "value": 1859,
+      "title": "fugiat",
+      "description": "aliquip qui"
+    },
+    {
+      "id": 25,
+      "typeId": 2,
+      "date": "01/2023",
+      "value": 4510,
+      "title": "velit",
+      "description": "id deserunt"
+    },
+    {
+      "id": 26,
+      "typeId": 2,
+      "date": "01/2023",
+      "value": 6890,
+      "title": "reprehenderit",
+      "description": "aute eu"
+    },
+    {
+      "id": 27,
+      "typeId": 2,
+      "date": "01/2023",
+      "value": 8977,
+      "title": "mollit",
+      "description": "cupidatat ipsum"
+    },
+    {
+      "id": 28,
+      "typeId": 2,
+      "date": "02/2023",
+      "value": 9080,
+      "title": "quis",
+      "description": "duis laboris"
+    },
+    {
+      "id": 29,
+      "typeId": 2,
+      "date": "02/2023",
+      "value": 1783,
+      "title": "est",
+      "description": "aliqua est"
+    },
+    {
+      "id": 30,
+      "typeId": 2,
+      "date": "02/2023",
+      "value": 8327,
+      "title": "esse",
+      "description": "sunt non"
+    }
+  ],
+  "bankTransaction": [
+    {
+      "id": 1,
+      "date": "10/2022",
+      "value": 5871,
+      "title": "fugiat",
+      "description": "qui adipisicing",
+      "bankId": 2
+    },
+    {
+      "id": 2,
+      "date": "10/2022",
+      "value": 2591,
+      "title": "pariatur",
+      "description": "excepteur id",
+      "bankId": 2
+    },
+    {
+      "id": 3,
+      "date": "10/2022",
+      "value": 8573,
+      "title": "in",
+      "description": "elit commodo",
+      "bankId": 1
+    },
+    {
+      "id": 4,
+      "date": "11/2022",
+      "value": 4743,
+      "title": "non",
+      "description": "duis laboris",
+      "bankId": 1
+    },
+    {
+      "id": 5,
+      "date": "11/2022",
+      "value": 1630,
+      "title": "sit",
+      "description": "ex eiusmod",
+      "bankId": 1
+    },
+    {
+      "id": 6,
+      "date": "11/2022",
+      "value": 1304,
+      "title": "laboris",
+      "description": "non deserunt",
+      "bankId": 1
+    },
+    {
+      "id": 7,
+      "date": "12/2022",
+      "value": 5234,
+      "title": "proident",
+      "description": "ipsum sint",
+      "bankId": 2
+    },
+    {
+      "id": 8,
+      "bankId": 1,
+      "date": "12/2022",
+      "value": 8375,
+      "title": "adipisicing",
+      "description": "magna consequat"
+    },
+    {
+      "id": 9,
+      "bankId": 1,
+      "date": "12/2022",
+      "value": 2256,
+      "title": "est",
+      "description": "reprehenderit anim"
+    },
+    {
+      "id": 10,
+      "bankId": 1,
+      "date": "01/2023",
+      "value": 5660,
+      "title": "ea",
+      "description": "ut est"
+    },
+    {
+      "id": 11,
+      "bankId": 1,
+      "date": "01/2023",
+      "value": 5596,
+      "title": "aliquip",
+      "description": "velit aliquip"
+    },
+    {
+      "id": 12,
+      "bankId": 1,
+      "date": "01/2023",
+      "value": 6431,
+      "title": "in",
+      "description": "dolore exercitation"
+    },
+    {
+      "id": 13,
+      "bankId": 1,
+      "date": "02/2023",
+      "value": 3262,
+      "title": "nostrud",
+      "description": "excepteur enim"
+    },
+    {
+      "id": 14,
+      "bankId": 1,
+      "date": "02/2023",
+      "value": 6109,
+      "title": "nostrud",
+      "description": "irure fugiat"
+    },
+    {
+      "id": 15,
+      "bankId": 1,
+      "date": "02/2023",
+      "value": 4120,
+      "title": "anim",
+      "description": "amet magna"
+    },
+    {
+      "id": 16,
+      "date": "10/2022",
+      "value": 3394,
+      "title": "labore",
+      "description": "labore in",
+      "bankId": 1
+    },
+    {
+      "id": 17,
+      "bankId": 2,
+      "date": "10/2022",
+      "value": 4671,
+      "title": "ipsum",
+      "description": "dolore duis"
+    },
+    {
+      "id": 18,
+      "date": "10/2022",
+      "value": 9842,
+      "title": "irure",
+      "description": "mollit est",
+      "bankId": 1
+    },
+    {
+      "id": 19,
+      "bankId": 2,
+      "date": "11/2022",
+      "value": 8980,
+      "title": "commodo",
+      "description": "labore non"
+    },
+    {
+      "id": 20,
+      "date": "11/2022",
+      "value": 7595,
+      "title": "consequat",
+      "description": "commodo labore",
+      "bankId": 1
+    },
+    {
+      "id": 21,
+      "bankId": 2,
+      "date": "11/2022",
+      "value": 5780,
+      "title": "quis",
+      "description": "commodo aliqua"
+    },
+    {
+      "id": 22,
+      "bankId": 2,
+      "date": "12/2022",
+      "value": 1877,
+      "title": "sit",
+      "description": "pariatur ipsum"
+    },
+    {
+      "id": 23,
+      "bankId": 2,
+      "date": "12/2022",
+      "value": 6124,
+      "title": "enim",
+      "description": "veniam et"
+    },
+    {
+      "id": 24,
+      "bankId": 2,
+      "date": "12/2022",
+      "value": 2300,
+      "title": "pariatur",
+      "description": "excepteur ipsum"
+    },
+    {
+      "id": 25,
+      "bankId": 2,
+      "date": "01/2023",
+      "value": 8928,
+      "title": "nostrud",
+      "description": "commodo velit"
+    },
+    {
+      "id": 26,
+      "bankId": 2,
+      "date": "01/2023",
+      "value": 8823,
+      "title": "ullamco",
+      "description": "consequat esse"
+    },
+    {
+      "id": 27,
+      "bankId": 2,
+      "date": "01/2023",
+      "value": 9555,
+      "title": "duis",
+      "description": "ex pariatur"
+    },
+    {
+      "id": 28,
+      "bankId": 2,
+      "date": "02/2023",
+      "value": 2162,
+      "title": "do",
+      "description": "tempor consequat"
+    },
+    {
+      "id": 29,
+      "bankId": 2,
+      "date": "02/2023",
+      "value": 9811,
+      "title": "ex",
+      "description": "pariatur ut"
+    },
+    {
+      "id": 30,
+      "bankId": 2,
+      "date": "02/2023",
+      "value": 3498,
+      "title": "culpa",
+      "description": "sit dolor"
+    }
+  ]
+}
