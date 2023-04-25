@@ -1,12 +1,6 @@
 import { Table } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
-import { useContext } from 'react';
-import {
-  bankMockData,
-  costGoodsMockData,
-  expenseMockData,
-  incomeMockData,
-} from './mockData';
+import { useContext, useEffect } from 'react';
 import { getSumByMonth, mapChildrenValues } from '../utils';
 import {
   BankData,
@@ -20,6 +14,7 @@ import {
   TransactionDispatchContext,
 } from '../../context/TransactionContext';
 import FinancialCategoryRow from '../FinancialCategoryRow/FinancialCategoryRow';
+import currencyFormat from '../../../../utils/currencyFormat';
 
 import './styles.scss';
 
@@ -39,7 +34,7 @@ const getDataSource = (
   const expensesSum = getSumByMonth(expensesData, 'values');
   const grossProfit: SumByMonth = {};
   Object.keys(incomeSum).forEach((month) => {
-    grossProfit[month] = incomeSum[month] - costGoodSum[month];
+    grossProfit[month] = incomeSum[month] + costGoodSum[month];
   });
   const netProfit: SumByMonth = {};
   Object.keys(expensesSum).forEach((month) => {
@@ -56,6 +51,7 @@ const getDataSource = (
     {
       key: '2',
       sectionName: 'Credit Cards',
+      children: [],
     },
     {
       key: '3',
@@ -147,23 +143,27 @@ const getColumns = (
       onCell: (record) => {
         const { isCalculated, children } = record;
         return {
-          id: `${record.key}-${dataIndex}`,
           draggable: true,
           onClick: () => {
             if (!children && !isCalculated) {
-              transactionSiderAction({ type: 'setData', data: record });
+              transactionSiderAction({
+                type: 'setData',
+                data: {
+                  date: dataIndex,
+                  id: record.id,
+                  value: record[dataIndex],
+                  title: record.bankName || record.type,
+                  financialType: record.financialType,
+                  rowData: { ...record },
+                },
+              });
             }
           },
         };
       },
       dataIndex,
       render: (value) => {
-        const formatter = new Intl.NumberFormat('en-US', {
-          style: 'currency',
-          currency: 'USD',
-        });
-
-        return formatter.format(value || 0);
+        return currencyFormat(value);
       },
     });
   });
@@ -171,8 +171,25 @@ const getColumns = (
   return columns;
 };
 
-export default function FinancialReport(): JSX.Element {
+interface FinancialReportProps {
+  data: {
+    bankData: any;
+    expenseData: any;
+    costGoodsData: any;
+    incomeData: any;
+  };
+}
+
+export default function FinancialReport(
+  props: FinancialReportProps
+): JSX.Element {
   const dispatch = useContext(TransactionDispatchContext);
+  const { data } = props;
+  const { bankData, incomeData, expenseData, costGoodsData } = data;
+
+  useEffect(() => {
+    dispatch({ type: 'forceUpdateDataObject' });
+  }, [data, dispatch]);
 
   return (
     <Table
@@ -186,14 +203,15 @@ export default function FinancialReport(): JSX.Element {
 
         return {
           draggable: !children && !isCalculated,
+          record,
         };
       }}
       bordered
       dataSource={getDataSource(
-        bankMockData.data,
-        expenseMockData.data,
-        costGoodsMockData.data,
-        incomeMockData.data
+        bankData,
+        expenseData,
+        costGoodsData,
+        incomeData
       )}
       columns={getColumns(dispatch)}
       pagination={false}

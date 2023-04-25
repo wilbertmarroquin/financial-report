@@ -35,6 +35,7 @@ export const mapChildrenValues = (
     return {
       [titleKey]: data[titleKey],
       key: data[titleKey],
+      ...data,
       ...dataPerMonth,
     };
   });

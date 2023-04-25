@@ -1,5 +1,5 @@
 import { Col, Layout, Row } from 'antd';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import TransactionCard from './TransactionCard';
 import {
   TransactionContext,
@@ -8,6 +8,8 @@ import {
 } from '../../context/TransactionContext';
 
 import './styles.scss';
+import getTransactionInfo from '../../api/getTransactionInfo';
+import currencyFormat from '../../../../utils/currencyFormat';
 
 const { Sider } = Layout;
 
@@ -15,12 +17,26 @@ export default function TransactionSider() {
   const { collapse, currentCellData } =
     useContext<TransactionState>(TransactionContext);
   const dispatch = useContext(TransactionDispatchContext);
+  const { id, date, financialType, title, rowData } = currentCellData;
+  const [transactionData, refetch] = getTransactionInfo(
+    financialType,
+    id,
+    date
+  );
+  const transactionSumValue = transactionData.reduce(
+    (acc, transaction) => acc + transaction.value,
+    0
+  );
+
+  useEffect(() => {
+    refetch();
+  }, [currentCellData, refetch]);
 
   return (
     <Sider collapsed={collapse} className="transaction-sider">
       <Row className="header">
         <Row className="title">
-          <Col>Office Supplies & Software</Col>
+          <Col>{title}</Col>
           <Col
             className="close"
             onClick={() => {
@@ -31,35 +47,27 @@ export default function TransactionSider() {
           </Col>
         </Row>
         <Row className="count">
-          <Col className="transaction">3 Transactions</Col>
-          <Col className="date">October 2023</Col>
+          <Col className="transaction">
+            {transactionData.length} Transactions
+          </Col>
+          <Col className="date">{date}</Col>
         </Row>
       </Row>
       <Row className="month-info">
-        <Col>Oct 2022</Col>
-        <Col>12397</Col>
+        <Col>{date}</Col>
+        <Col>{currencyFormat(transactionSumValue)}</Col>
       </Row>
-      <TransactionCard
-        id={1}
-        date="10/10/2002"
-        description="Google Ads"
-        title="Google"
-        value={11234}
-      />
-      <TransactionCard
-        id={2}
-        date="10/10/2002"
-        description="Google Ads"
-        title="Google"
-        value={11234}
-      />
-      <TransactionCard
-        id={3}
-        date="10/10/2002"
-        description="Google Ads"
-        title="Google"
-        value={11234}
-      />
+      {transactionData.map((transaction) => (
+        <TransactionCard
+          id={transaction.id}
+          key={transaction.id}
+          date={transaction.date}
+          description={transaction.description}
+          title={transaction.title}
+          value={transaction.value}
+          typeData={rowData}
+        />
+      ))}
     </Sider>
   );
 }

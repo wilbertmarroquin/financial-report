@@ -4,6 +4,7 @@ $general-y-padding: 12px;
 .transaction-sider.ant-layout-sider-collapsed {
   min-width: 400px !important;
   display: block !important;
+  border-bottom: 1px solid black;
 }
 
 .transaction-sider.ant-layout-sider {
@@ -61,11 +62,13 @@ $general-y-padding: 12px;
     color: #9ba4b5;
     font-weight: bold;
     font-size: 10px;
+    text-transform: capitalize;
   }
 
   .title,
   .value {
     font-weight: bold;
     font-size: 12px;
+    text-transform: capitalize;
   }
 }
